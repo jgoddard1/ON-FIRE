@@ -94,7 +94,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #FE2D2D;
+  background-color: #ED1C1C;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -275,7 +275,7 @@ hr {
 .content ul a,
 .content ol a {
   text-decoration: none;
-  color: #ff7a33;
+  color: #0029F3;
 }
 
 .content p a:hover,
@@ -297,7 +297,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #ff7a33;
+  background-color: #0029F3;
   display: flex;
 }
 
