@@ -263,9 +263,9 @@ hr {
 .content {
   position: relative;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 24px;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5;
   max-width: 900px;
   overflow-x: auto;
@@ -297,7 +297,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #0029F3;
+  background-color: #ED1C1C;
   display: flex;
 }
 
