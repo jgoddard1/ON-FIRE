@@ -52,9 +52,9 @@
       function  updateTextbox(areaId){
         var textbox = document.getElementById('textbox');
         if (areaId === 'area1') {
-          textbox.value = 'You clicked on Area 1';
+          textbox.value = 'Aberdeen';
         } else if (areaId === 'area2') {
-          textbox.value = 'You clicked on Area 2';
+          textbox.value = 'Dundee';
         }
       }
  </script>
@@ -65,8 +65,8 @@
     <div class="content">
       <img src="img/map_simplified.png" usemap="#image-map" alt="Clickable Image" class="float-image">
     <map name="image-map">
-      <area shape="circle" coords="500,150,50" href="javascript:void(0);" alt="Link 1" onclick="updateTextbox('area1')">
-     <area shape="circle" coords="50,10,250" href="javascript:void(0);" alt="Link 2" onclick="updateTextbox('area2')">
+      <area shape="circle" coords="272,187,10" href="javascript:void(0);" alt="Link 1" onclick="updateTextbox('area1')">
+     <area shape="circle" coords="253,226,10" href="javascript:void(0);" alt="Link 2" onclick="updateTextbox('area2')">
     </map>
       <input type="text" id="textbox" value="">
   </body>
