@@ -43,10 +43,13 @@
   .textbox{
     display:none;
     background-color: rgba(255,255,255,0.8);
-    padding:10px;
+    padding:30px;
     border:1px solid #000;
     z-index:10;
   }
+    .text-size{ 
+      font-size: 16px;
+    }
   </style>
   <script>
       function  updateTextbox(areaId){
@@ -122,7 +125,7 @@
       <area shape="circle" coords="236,504,10" href="javascript:void(0);" alt="Link 19" onclick="updateTextbox('area19')">
       <area shape="circle" coords="288,507,10" href="javascript:void(0);" alt="Link 20" onclick="updateTextbox('area20')">
     </map>
-      <input type="text" id="textbox" value="">
+      <input type="text" class="text-size" id="textbox" value="">
   </body>
 
 </html>
