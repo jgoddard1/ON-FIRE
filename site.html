@@ -94,6 +94,14 @@
         }
       }
  </script>
+<script>
+  function addNewLineAtPosition() {
+    var text = textbox.value;
+    var position = 10;
+    var newText = text.slice(0,position) + '\n' + text.slice(position);
+    textbox.value = newText;
+  }
+</script>
 </head>
   <body>
  <div class="menu-container"></div>
@@ -122,7 +130,7 @@
       <area shape="circle" coords="236,504,10" href="javascript:void(0);" alt="Link 19" onclick="updateTextbox('area19')">
       <area shape="circle" coords="288,507,10" href="javascript:void(0);" alt="Link 20" onclick="updateTextbox('area20')">
     </map>
-      <input type="text" class="styled-textarea" id="textbox" value="" rows="2">
+      <textarea type="text" class="styled-textarea" id="textbox" value="" rows="3"> </textarea>
   </body>
 
 </html>
