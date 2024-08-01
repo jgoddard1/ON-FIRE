@@ -29,8 +29,10 @@
       font-weight: 700 !important;
     }
   .container{
-    position:relative;
-    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: centre;
+    height: 100vh;
   }
   .float-image{ 
     float:left;
@@ -40,9 +42,6 @@
   }
   .textbox{
     display:none;
-    position: absolute;
-    top:20px;
-    left: 100%;
     background-color: rgba(255,255,255,0.8);
     padding:10px;
     border:1px solid #000;
