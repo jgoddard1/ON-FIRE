@@ -48,38 +48,27 @@
     z-index:10;
   }
   </style>
+  <script>
+      function  updateTextbox(areaId){
+        var textbox = document.getElementById('textbox');
+        if (areaId === 'area1') {
+          textbox.value = 'You clicked on Area 1';
+        } else if (areaId === 'area2') {
+          textbox.value = 'You clicked on Area 2';
+        }
+      }
+ </script>
 </head>
   <body>
  <div class="menu-container"></div>
   <div class="content-container">
     <div class="content">
       <img src="img/map_simplified.png" usemap="#image-map" alt="Clickable Image" class="float-image">
-      <div id="textbox1" class="textbox">
-        <p>This is a textbox for Link 1.</p>
-      </div>
-      <div id="textbox2" class="textbox">
-        <p>This is a textbox for Link 2.</p>
-      </div>
-    </div>
-  </div>
-
     <map name="image-map">
-      <area shape="circle" coords="500,150,50" href="javascript:void(0);" alt="Link 1" onclick="showTextbox('textbox1')">
-       <area shape="circle" coords="200,10,250" href="javascript:void(0);" alt="Link 2" onclick="showTextbox('textbox2')">
+      <area shape="circle" coords="500,150,50" href="javascript:void(0);" alt="Link 1" onclick="updateTextbox('area1')">
+       <area shape="circle" coords="200,10,250" href="javascript:void(0);" alt="Link 2" onclick="updateTextbox('area2')">
     </map>
-    <script>
-      function  showTextbox(id){
-        // Hide all text boxes
-        var textboxes = document.querySelectorAll('.textbox');
-        textboxes.forEach(function(textbox){
-          textbox.style.display='none';
-        });
-
-        // Show the selected text box
-        var textbox = document.getElementById(id);
-        textbox.style.display='block';
-      }
-    </script>
+      <input type="text" id="textbox" value="">
   </body>
 
 </html>
